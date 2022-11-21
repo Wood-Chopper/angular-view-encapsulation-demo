@@ -1,5 +1,5 @@
-<button (click)="switch()">Switch</button> <app-side></app-side
-><!-- Should stay blue -->
+<button (click)="switch()">Display/Hide non-encaplusated component</button>
 
-<app-no-encapsulation *ngIf="display"></app-no-encapsulation
-><!-- Is red -->
+<app-side></app-side>
+
+<app-no-encapsulation *ngIf="display"></app-no-encapsulation>
