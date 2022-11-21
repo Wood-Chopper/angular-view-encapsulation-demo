@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-no-encapsulation',
@@ -6,8 +6,4 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./no-encapsulation.component.css'],
   encapsulation: ViewEncapsulation.None /* This line produce the bug */,
 })
-export class NoEncapsulationComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class NoEncapsulationComponent {}

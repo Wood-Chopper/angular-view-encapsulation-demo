@@ -1,3 +1,4 @@
 .color {
+  /* This property modify the style of child component */
   background-color: red !important;
 }
