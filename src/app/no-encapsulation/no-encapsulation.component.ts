@@ -4,13 +4,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'app-no-encapsulation',
   templateUrl: './no-encapsulation.component.html',
   styleUrls: ['./no-encapsulation.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None /* This line produce the bug */,
 })
 export class NoEncapsulationComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
